@@ -16,7 +16,7 @@ return new class extends Migration
             $table->timestamps();
             $table->integer('userid')->unsigned();
             $table->string('name');
-            $table->string('email');
+            $table->string('email')->nullable();
             $table->string('username')->nullable();
             $table->string('password')->nullable();
             $table->string('pin')->nullable();
